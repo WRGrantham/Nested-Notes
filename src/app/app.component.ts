@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  tasks: any [] = [
+    {title: 'first task'},
+    {title: 'second task'}
+  ];
+  constructor() { }
+  // 4
+  dataFromChild(eventData){
+    console.log(eventData);
+  }
 }
