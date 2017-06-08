@@ -24,6 +24,6 @@ import { HttpService } from './http.service';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] 
 })
 export class AppModule { }
