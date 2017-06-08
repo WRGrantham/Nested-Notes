@@ -1,4 +1,4 @@
 <h5>NoteListComponent</h5>
-{{ myNotes | json}}
-
-<button (click)="callParent()">Call Parent</button>
+<div *ngFor="let note of myNotes">
+  <h5> {{note.title}} </h5>
+</div>

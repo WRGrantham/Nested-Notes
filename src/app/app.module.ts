@@ -8,6 +8,7 @@ import { TaskComponent } from './task/task.component';
 import { NoteComponent } from './note/note.component';
 import { NoteListComponent } from './note/note-list/note-list.component';
 import { NoteNewComponent } from './note/note-new/note-new.component';
+import { HttpService } from './http.service';
 
 @NgModule({
   declarations: [

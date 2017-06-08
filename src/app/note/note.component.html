@@ -1,5 +1,4 @@
 <h3>NoteComponent</h3>
-{{notes | json}}
-<app-note-list [myNotes]="notes" (myEvent)="invoked()" ></app-note-list>
+<app-note-list [myNotes]="notes"></app-note-list>
 
-<app-note-new>the Note-new component</app-note-new>
+<app-note-new (addNote)="addNote($event)"></app-note-new>

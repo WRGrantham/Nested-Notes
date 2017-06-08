@@ -7,14 +7,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class NoteListComponent implements OnInit {
   @Input() myNotes;
-  @Output() myEvent = new EventEmitter();
-  constructor() { 
-
-  }
-  callParent(){
-    this.myEvent.emit();
-  }
-
+  constructor() { }
   ngOnInit() {
   }
 

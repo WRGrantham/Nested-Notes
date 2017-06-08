@@ -11,18 +11,13 @@ export class NoteComponent implements OnInit {
     {title: 'second note'}
   ];
 
-  invoked(){
-    console.log("Invoked");
-  }
-
   constructor() { }
 
   ngOnInit() {
   }
 
-  addNote(notes: any){
+  addNote(note: any){
     console.log("Invoking method in parent note component")
-    this.notes.push(newNote);
+    this.notes.push(note);
   }
-
 }

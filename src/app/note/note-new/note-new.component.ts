@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-note-new',
@@ -8,17 +8,19 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class NoteNewComponent implements OnInit {
 
 
-@Output() addNote = new EventEmitter()
+  @Output() addNote = new EventEmitter()
 
+  note = {title: '' }
+  
   constructor() { }
 
   ngOnInit() {
   }
 
   createNote(){
-    console.log("creating in child component", this.newNote);
-    this.addNote.emit(this.newNote);
-    this.newNote = {
+    console.log("creating in child component", this.note);
+    this.addNote.emit(this.note);
+    this.note = {
       title: ''
     }
   }
